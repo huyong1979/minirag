@@ -25,4 +25,4 @@ where = ["."]
 include = ["minirag*"]
 
 [project.urls]
-Repository = "https://github.com/example/minirag"
+Repository = "https://github.com/huyong1979/minirag"
