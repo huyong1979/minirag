@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minirag"
+version = "0.1.0"
+description = "A minimal, beginner-friendly RAG (Retrieval-Augmented Generation) toolkit powered by a local Ollama LLM."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["rag", "ollama", "llm", "retrieval", "embeddings"]
+dependencies = [
+    "requests>=2.28",
+    "numpy>=1.24",
+    "rank-bm25>=0.2.2",
+]
+
+[project.optional-dependencies]
+pdf = ["pypdf>=4.0"]
+dev = ["pytest>=7", "pytest-cov"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["minirag*"]
+
+[project.urls]
+Repository = "https://github.com/example/minirag"
